@@ -5,3 +5,4 @@ npm i nodemon
 npm i -D tailwind postcss autoprefix // 26:57
 npm i react-router-dom
 npm i axios react-icons
+npm i notistack
