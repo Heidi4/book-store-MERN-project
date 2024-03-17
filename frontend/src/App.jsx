@@ -1,12 +1,19 @@
-import  Navbar  from "./components/Navbar/Navbar";
-import "./app.module.css"
-// import Landing from "./components/Landing/Landing";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CreateBooks from "./pages/CreateBook";
+import ShowBook from "./pages/ShowBook";
+import EditBook from "./pages/EditBook";
+import DeleteBook from "./pages/DeleteBook";
 function App() {
   return (
-    <>
-      <Navbar />
-      {/* <Landing/> */}
-    </>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/books/create" element={<CreateBooks />}></Route>
+      <Route path="/books/details/:id" element={<ShowBook />}></Route>
+      <Route path="/books/edit/:id" element={<EditBook />}></Route>
+      <Route path="/books/delete/:id" element={<DeleteBook />}></Route>
+    </Routes>
   );
 }
 
