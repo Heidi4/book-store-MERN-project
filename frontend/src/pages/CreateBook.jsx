@@ -37,9 +37,9 @@ function CreateBooks() {
       {loading ? (
         <Spinner />
       ) : (
-        <div className="flex flex-col border-2 border-sky-400 rounded-x1 w-[600px] p4 mx-auto">
+        <div className="flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p4 mx-auto">
           <div className="my-4">
-            <label className="text-x1 mr-4 text-gray-500">Title</label>
+            <label className="text-xl mr-4 text-gray-500">Title</label>
             <input
               type="text"
               value={title}
@@ -48,7 +48,7 @@ function CreateBooks() {
             />
           </div>
           <div className="my-4">
-            <label className="text-x1 mr-4 text-gray-500">Author</label>
+            <label className="text-xl mr-4 text-gray-500">Author</label>
             <input
               type="text"
               value={author}
@@ -57,7 +57,7 @@ function CreateBooks() {
             />
           </div>
           <div className="my-4">
-            <label className="text-x1 mr-4 text-gray-500">Publish Year</label>
+            <label className="text-xl mr-4 text-gray-500">Publish Year</label>
             <input
               type="number"
               value={publishYear}

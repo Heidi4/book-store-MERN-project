@@ -25,33 +25,33 @@ function ShowBook() {
   return (
     <div className="p-4">
       <BackButton />
-      <h1 className="text-3x1 my">Show Book</h1>
+      <h1 className="text-3xl my">Show Book</h1>
       {loading ? (
         <Spinner />
       ) : (
-        <div className="flex flex-col border-2 border-sky-400 rounded-x1">
+        <div className="flex flex-col border-2 border-sky-400 rounded-xl">
           <div className="my-4">
-            <span className="text-x1 mr-4 text-gray-50">Id</span>
+            <span className="text-xl mr-4 text-gray-50">Id</span>
             <span>{book._id}</span>
           </div>
           <div className="my-4">
-            <span className="text-x1 mr-4 text-gray-500">Title</span>
+            <span className="text-xl mr-4 text-gray-500">Title</span>
             <span>{book.title}</span>
           </div>
           <div className="my-4">
-            <span className="text-x1 mr-4 text-gray-500">Author</span>
+            <span className="text-xl mr-4 text-gray-500">Author</span>
             <span>{book.author}</span>
           </div>
           <div className="my-4">
-            <span className="text-x1 mr-4 text-gray-500">Publish Year</span>
+            <span className="text-xl mr-4 text-gray-500">Publish Year</span>
             <span>{book.publishYear}</span>
           </div>
           <div>
-            <span className="text-x1 mr-4 text-gray-500">Create Time</span>
+            <span className="text-xl mr-4 text-gray-500">Create Time</span>
             <span>{new Date(book.createdAt).toString()}</span>
           </div>
           <div>
-            <span className="text-x1 mr-4 text-gray-500">Update Time</span>
+            <span className="text-xl mr-4 text-gray-500">Update Time</span>
             <span>{new Date(book.updatedAt).toString()}</span>
           </div>
         </div>
