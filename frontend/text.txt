@@ -7,4 +7,4 @@ npm i nodemon`
 `npm i axios react-icons`
 `npm i notistack`
 
-# DB_PASS = 'ueoVwa6MRx1QETTC'
+# DB_PASS = ''
