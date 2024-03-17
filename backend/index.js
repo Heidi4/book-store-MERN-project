@@ -11,12 +11,12 @@ app.use(express.json());
 
 // MIDDLEWARE for handling CORS POLICY
 // option 1: Allow all origin with default of cors(*)
-app.use(cors(*));
+// app.use(cors(*));
 
 // option 2: allow custom origins
 app.use(
   cors({
-origin: 'http://localhost:3000',
+origin: '*',
 methods: ['GET', 'POST', 'DELETE', 'PUT'],
 allowedHeaders: ['Content-Type'],
 }));
@@ -24,15 +24,14 @@ allowedHeaders: ['Content-Type'],
 
 app.get('/', (request, response) => {
   console.log(request);
-  return response.status(234).send('Welcome to Mern tutoria');
+  return response.status(234).send('Welcome to Mern tutorial');
 
 });
 
 app.use('./books', booksRoute);
 
-mongoose // npm i mongoose
-  .connect(mongoURL)
-  .then(() = {
+mongoose.connect(mongoURL)
+.then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {
       console.log(`App is listening to port: ${PORT}`);
