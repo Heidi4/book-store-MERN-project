@@ -1,8 +1,8 @@
 ## installs
 `npm i mongoose`
-npm i cors`
-npm i nodemon`
-`npm i -D tailw`ind postcss autoprefixer` // 26:57
+`npm i cors`
+`npm i nodemon`
+`npm i -D tailw`ind postcss autoprefixer` // 
 `npm i react-router-dom`
 `npm i axios react-icons`
 `npm i notistack`
